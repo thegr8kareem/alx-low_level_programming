@@ -2,23 +2,29 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success/correct)
  */
-
 int main(void)
-{
-	int a;
 
-	for (a = 0; a < 100; a++)
-	{
-		putchar(a + '0');
-		if (a < 99)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+{
+int number;
+
+
+for (number = 48; number <= 57; number++)
+{
+putchar(number);
+
+if (number == 57)
+{
+break;
 }
 
+putchar(',');
+putchar (' ');
+}
+
+putchar('\n');
+
+return (0);
+
+}
